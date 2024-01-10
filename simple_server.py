@@ -36,7 +36,7 @@ class Server(BaseHTTPRequestHandler):
 
 def run(server_class=HTTPServer, handler_class=Server):
     """Entrypoint for python server"""
-    server_address = ("0.0.0.0", 8000)
+    server_address = ("0.0.0.0", 80)
     httpd = server_class(server_address, handler_class)
 
     # to generate private key:
